@@ -32,10 +32,10 @@ func main() {
 
 	err = json.Unmarshal(body, &weatherResponse)
 	if err != nil {
-		fmt.Println("Error unmarshalling: %v", err)
+		fmt.Printf("Error unmarshalling: %v", err)
 		return
 	}
 
-	fmt.Printf("\nCurrent weather in Provo, Utah\n%v\n", weatherResponse.WeatherOverview)
+	fmt.Printf("\nCurrent weather in Provo, Utah\n\n%v\n", weatherResponse.WeatherOverview)
 
 }
